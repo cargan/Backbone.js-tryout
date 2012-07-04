@@ -19,7 +19,7 @@
         <script type="text/html" id="template-first">
         <ul>
         <% _.each(items, function(item){ %>
-         <li><%= item.name %> - <%= item.score %></li>
+         <li><%= item.get("name") %> - <%= item.get("score") %></li>
         <% }); %>
         </ul>
         </script>
