@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Require && BackoneJs demo</title>
+        <script data-main="scripts/main" src="scripts/require.js"></script>
+    </head>
+    <body>
+        <h1>My Sample Project</h1>
+        <div id="navigation">
+          <a href="#home">home</a>&nbsp;
+          <a href="#first-url">first-url</a>&nbsp;
+          <a href="#second-url">second-url</a>&nbsp;
+          <a href="#third-url">third-url</a>&nbsp;
+        </div>
+        <div id="page">
+          <p>content</p>
+        </div>
+
+        <script type="text/html" id="template-first">
+        <ul>
+        <% _.each(items, function(item){ %>
+         <li><%= item.name %> - <%= item.score %></li>
+        <% }); %>
+        </ul>
+        </script>
+
+        <script type="text/html" id="template-second">
+          <p><%= info %></p>
+        </script>
+
+        <script type="text/html" id="template-third">
+          <p><%= info %></p>
+        </script>
+   </body>
+</html>
+
